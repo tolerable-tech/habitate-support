@@ -68,7 +68,7 @@ Replace the goal name in quotes with the **exact name of your goal** in Habitate
 
 ### Option B: Install the ready-made shortcut
 
-1. On your iPhone, open this link: **[Get the "Log Lesson in Habitate" shortcut](TODO-ICLOUD-LINK)**
+1. On your iPhone, open this link: **[Get the "Log Lesson in Habitate" shortcut](https://www.icloud.com/shortcuts/d7f676412b61493f85b6a08824fa28a2)**
 2. Tap **Add Shortcut**.
 3. If it asks you to pick a goal, choose the Habitate goal you use for your lessons. If it doesn't ask, open the shortcut in the Shortcuts app and tap the **Goal** field in **both** Habitate actions to choose your goal.
 
