@@ -1,6 +1,13 @@
+---
+title: Support
+permalink: /support/
+---
+
 # Habitate Support
 
 Welcome! This is the support hub for the **Habitate iOS App**. Whether you've run into a bug, have an idea to share, or need to get in touch privately, you're in the right place.
+
+The app's website is **[habitate.app](https://habitate.app)**.
 
 ---
 
@@ -21,6 +28,18 @@ Choose the option that best fits your situation:
 | 🐛 **Bug Report** | Something isn't working as expected | [Report a bug](https://github.com/tolerable-tech/habitate-support/issues/new?template=bug_report.md) |
 | 💡 **Feedback & Feature Request** | Share an idea or suggestion | [Share feedback](https://github.com/tolerable-tech/habitate-support/issues/new?template=feedback.md) |
 | 🔒 **Private Contact Request** | Need a confidential conversation | [Request private contact](https://github.com/tolerable-tech/habitate-support/issues/new?template=private_contact.md) |
+
+---
+
+## Shortcuts & automations
+
+Want to check in with Siri, or automatically after finishing something in another app? See **[Shortcuts & Automations](Shortcuts.md)** for ready-made recipes and setup steps.
+
+---
+
+## Enjoying Habitate?
+
+Habitate never interrupts you to ask for a review, so if you like it, a quick **[rating or review on the App Store](https://apps.apple.com/app/id6783581150?action=write-review)** really helps other people find it. Thank you!
 
 ---
 

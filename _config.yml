@@ -1,0 +1,40 @@
+title: Habitate
+tagline: Any progress counts
+description: >-
+  A simple habit and goal tracker for iPhone and iPad. Build streaks, check in
+  from widgets or Siri, and keep your data private in iCloud.
+url: https://habitate.app
+baseurl: ""
+lang: en
+
+app_store_id: "6783581150"
+app_store_url: https://apps.apple.com/app/id6783581150
+support_repo: https://github.com/tolerable-tech/habitate-support
+
+logo: /assets/img/icon.png
+image: /assets/img/og.jpg
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+relative_links:
+  enabled: true
+  collections: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - .github
+  - Gemfile
+  - Gemfile.lock
+  - vendor

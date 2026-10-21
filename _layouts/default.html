@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#4f8bff">
+  <meta name="apple-itunes-app" content="app-id={{ site.app_store_id }}">
+  {% seo %}
+  <link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+</head>
+<body class="{% if page.landing %}landing{% else %}doc{% endif %}">
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/img/icon.png' | relative_url }}" alt="" width="32" height="32">
+        <span>Habitate</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="{{ '/shortcuts/' | relative_url }}"{% if page.url == '/shortcuts/' %} aria-current="page"{% endif %}>Shortcuts</a>
+        <a href="{{ '/support/' | relative_url }}"{% if page.url == '/support/' %} aria-current="page"{% endif %}>Support</a>
+        <a href="{{ '/privacy/' | relative_url }}"{% if page.url == '/privacy/' %} aria-current="page"{% endif %}>Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    {%- if page.landing -%}
+      {{ content }}
+    {%- else -%}
+      <article class="wrap prose">
+        {{ content }}
+      </article>
+    {%- endif -%}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <img src="{{ '/assets/img/icon.png' | relative_url }}" alt="" width="40" height="40">
+        <div>
+          <strong>Habitate</strong>
+          <span>{{ site.tagline }}</span>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="{{ '/shortcuts/' | relative_url }}">Shortcuts</a>
+        <a href="{{ '/support/' | relative_url }}">Support</a>
+        <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>
+        <a href="{{ '/terms/' | relative_url }}">Terms of Use</a>
+      </nav>
+      {% include app-store-button.html height=44 %}
+    </div>
+    <div class="wrap footer-legal">
+      <p>© {{ site.time | date: "%Y" }} Habitate. Apple, the Apple logo, iPhone and iPad are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
+    </div>
+  </footer>
+</body>
+</html>

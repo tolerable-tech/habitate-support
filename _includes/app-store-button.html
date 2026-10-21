@@ -1,0 +1,11 @@
+{%- comment -%}
+Uses Apple's official badge once assets/img/app-store-badge.svg is added
+(download it from Apple's marketing tools site, unmodified). Until then, a
+plain text button.
+{%- endcomment -%}
+{%- assign badge = site.static_files | where: "path", "/assets/img/app-store-badge.svg" | first -%}
+{%- if badge -%}
+<a class="store-badge" href="{{ site.app_store_url }}"><img src="{{ '/assets/img/app-store-badge.svg' | relative_url }}" alt="Download on the App Store" height="{{ include.height | default: 54 }}"></a>
+{%- else -%}
+<a class="store-button" href="{{ site.app_store_url }}">Get Habitate on the App Store</a>
+{%- endif -%}
